@@ -341,7 +341,7 @@ def create_raid_disks(mount_point, mount_point_owner, mount_point_group, mount_p
       size                    disk_size
       volume_type             disk_type
       piops                   disk_piops
-      device                  "/dev/#{disk_dev_path}"
+      device                  disk_dev_path
       name                    disk_dev_path
       action                  [:create, :attach]
       snapshot_id             creating_from_snapshot ? snapshots[i-1] : ""
